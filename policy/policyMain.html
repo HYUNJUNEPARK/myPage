@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy List</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            color: #a30000;
+        }
+        h2 {
+            font-size: 1.2em;
+            margin-top: 2.5em;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+            padding: 0.5em;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+        li:hover {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+
+        <h2>BeGuard</h2>
+        <ul>
+            <li onclick="navigateToBeGuard('en')">English</li>
+            <li onclick="navigateToBeGuard('ko')">한국어</li>
+        </ul>
+
+        <h2>Good Idea Card</h2>
+        <ul>
+            <li onclick="navigateToGoodIdeaCard('en')">English</li>
+            <li onclick="navigateToGoodIdeaCard('ko')">한국어</li>
+        </ul>
+    </div>
+
+    <script>
+        function navigateToBeGuard(lang) {
+            window.location.href = `begurad/beguard.html?lang=${lang}`;
+        }
+        function navigateToGoodIdeaCard(lang) {
+            window.location.href = `goodIdeaCard/goodIdeaCard.html?lang=${lang}`;
+        }
+    </script>
+</body>
+</html>

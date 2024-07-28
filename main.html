@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #a30000;
+            padding: 10px 20px;
+            text-align: center;
+            color: white;
+        }
+        .tab {
+            display: flex;
+            background-color: #f1f1f1;
+        }
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 20px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .content {
+            padding: 20px;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Portfolio</h1>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</button>
+        <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+        <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+    </div>
+
+    <div id="AboutMe" class="tab-content">
+        <h2>About Me</h2>
+        <p>Write something about yourself here.</p>
+    </div>
+
+    <div id="Projects" class="tab-content">
+        <h2>Projects</h2>
+        <p>Showcase your projects here.</p>
+    </div>
+
+    <div id="Contact" class="tab-content">
+        <h2>Contact</h2>
+        <p>Provide your contact information here.</p>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.className += " active";
+        }
+
+        // Open the default tab
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementsByClassName('tablinks')[0].click();
+        });
+    </script>
+</body>
+</html>
