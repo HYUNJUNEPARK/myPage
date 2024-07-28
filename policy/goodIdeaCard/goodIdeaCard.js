@@ -1,7 +1,7 @@
 const translations = {
     en: {
         line_h1: "Privacy Policy : Good Idea Card",
-        line_p1: "'A demain' is the developer and distributor of the Android application 'BeGuard'.",
+        line_p1: "'A demain' is the developer and distributor of the Android application 'Good Idea Card'.",
 
         line_h2: "Privacy Protection",
         line_p2: "This software does not collect, use, or share your personal information or stored data.",
