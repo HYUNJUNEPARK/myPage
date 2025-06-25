@@ -1,7 +1,7 @@
 const translations = {
     en: {
         line_h1: "Privacy Policy : Good Idea Card",
-        line_p1: "'A demain' is the developer and distributor of the Android application 'Good Idea Card'.",
+        line_p1: "'Ademain' is the developer and distributor of the Android application 'Good Idea Card'.",
 
         line_h2: "Privacy Protection",
         line_p2: "This software does not collect, use, or share your personal information or stored data.",
@@ -20,7 +20,7 @@ const translations = {
     },
     ko: {
         line_h1: "개인 정보 처리 방침 : 좋은 생각 카드",
-        line_p1: "'A demain' 은 안드로이드 애플리케이션 '좋은 생각 카드' 의 개발자이자 배포자입니다.",
+        line_p1: "'Ademain' 은 안드로이드 애플리케이션 '좋은 생각 카드' 의 개발자이자 배포자입니다.",
     
         line_h2: "개인정보 보호",
         line_p2: "본 소프트웨어는 귀하의 개인 정보나 저장된 데이터에 대한 수집, 사용, 공유를 하지 않습니다.",

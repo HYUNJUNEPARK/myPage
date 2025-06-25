@@ -62,6 +62,13 @@
             <li onclick="navigateToGoodIdeaCard('en')">English</li>
             <li onclick="navigateToGoodIdeaCard('ko')">한국어</li>
         </ul>
+
+
+        <h2>Contact BackUp</h2>
+        <ul>
+            <li onclick="navigateToContactBackUp('en')">English</li>
+            <li onclick="navigateToContactBackUp('ko')">한국어</li>
+        </ul>
     </div>
 
     <script>
@@ -70,6 +77,9 @@
         }
         function navigateToGoodIdeaCard(lang) {
             window.location.href = `goodIdeaCard/goodIdeaCard.html?lang=${lang}`;
+        }
+        function navigateToContactBackUp(lang) {
+            window.location.href = `contactBackup/contactBackup.html?lang=${lang}`;
         }
     </script>
 </body>
